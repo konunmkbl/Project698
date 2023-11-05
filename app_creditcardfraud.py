@@ -44,11 +44,3 @@ if st.button("Predict Fraud"):
             st.success("Flag Type is: Non-Fraud")
     except Exception as e:
         st.error(f"An error occurred: {e}")
-
-# Reset button to clear the input fields
-if st.button("Reset"):
-    st.text_input("MCC (Merchant Category Code):", value="")
-    st.text_input("ZIP Code:", value="")
-    st.text_input("Currency:", value="")
-    st.text_input("Card Type:", value="")
-    st.text_input("Device:", value="")
