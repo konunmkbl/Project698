@@ -49,8 +49,8 @@ if st.button("Predict Fraud"):
         st.error(f"An error occurred: {e}")
 # Reset button to clear the input fields
 if st.button("Reset"):
-    st.text_input("MCC (Merchant Category Code (4Digit)):", value="")
-    st.text_input("ZIP Code:", value="")
-    st.text_input("Currency:", value="")
-    st.text_input("Card Type:", value="")
-    st.text_input("Device:", value="")
+    mcc = st.text_input("MCC (Merchant Category Code (4Digit)):", value="")
+    zipcode = st.text_input("ZIP Code:", value="")
+    currency = st.text_input("Currency:", value="")
+    card_type = st.text_input("Card Type:", value="")
+    device = st.text_input("Device:", value="")
