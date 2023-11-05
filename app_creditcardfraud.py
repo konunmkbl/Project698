@@ -18,9 +18,12 @@ st.write("Enter the following information to predict credit card fraud:")
 # Input fields for user to provide data
 mcc = st.text_input("MCC (Merchant Category Code (4Digit)):")
 zipcode = st.text_input("ZIP Code:")
-currency = st.text_input("Currency:")st.write('1 = EUR / 2 = INR / 3 = USD', option)
-card_type = st.text_input("Card Type:")st.write('1 = American Express / 2 = MasterCard / 3 = Visa', option)
-device = st.text_input("Device:")st.write('1 = Desktop / 2 = Mobile / 3 = Tablet', option)
+currency = st.text_input("Currency:") 
+st.write('1 = EUR / 2 = INR / 3 = USD', option)
+card_type = st.text_input("Card Type:") 
+st.write('1 = American Express / 2 = MasterCard / 3 = Visa', option)
+device = st.text_input("Device:") 
+st.write('1 = Desktop / 2 = Mobile / 3 = Tablet', option)
 
 # Button to make predictions
 if st.button("Predict Fraud"):
